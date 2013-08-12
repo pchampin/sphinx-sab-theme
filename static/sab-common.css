@@ -51,3 +51,17 @@ div.figure {
     max-height: 40ex;
     overflow-y: auto;
 }
+
+/* custom roles
+   IMPORTANT: those require the use of .. role:: X in the RST files using them.
+   */
+
+/* deleted text*/
+.del {
+    text-decoration: line-through;
+}
+
+/* text in a foreign language */
+.eng, .fre {
+    font-style: italic;
+}
