@@ -62,3 +62,55 @@ p.graphviz > img {
     padding: 1ex;
     margin: 1ex;
 }
+
+@media print {
+    div.body h1,
+    div.body h2,
+    div.body h3,
+    div.body h4,
+    div.body h5,
+    div.body h6 {
+        font-weight: bold;
+        padding-left: 0px;
+    }
+
+    div.body h1 > *,
+    div.body h2 > *,
+    div.body h3 > *,
+    div.body h4 > *,
+    div.body h5 > *,
+    div.body h6 > * {
+        page-break-before: avoid;
+    }
+
+
+    h1 {
+        counter-reset: section-lvl1;
+    }
+    h2:before {
+        counter-increment: section-lvl1;
+        content: "Chapitre " counter(section-lvl1) " : ";
+    }
+
+    h2 {
+        counter-reset: section-lvl2;
+    }
+    h3:before {
+        counter-increment: section-lvl2;
+        content: counter(section-lvl1) "." counter(section-lvl2) ". ";
+    }
+
+    h3 {
+        counter-reset: section-lvl3;
+    }
+    h4:before {
+        counter-increment: section-lvl3;
+        content: counter(section-lvl1) "."
+                 counter(section-lvl2) "."
+                 counter(section-lvl3)". ";
+    }
+
+    h2 {
+        border-top: 1.5px solid black;
+    }
+}
