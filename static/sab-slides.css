@@ -148,9 +148,8 @@ a.reference {
 
 /* custom classes */
 
-.big pre {
-    font-size: 80%;
+.big > .highlight > pre, .big > pre {
     max-height: 500px;
-    overflow-y: auto;
+    overflow: auto;
 }
 
