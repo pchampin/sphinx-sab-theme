@@ -32,6 +32,7 @@ div.figure {
     border: 1px solid gray;
 }
 
+
 /* custom classes */
 
 .copyright {
@@ -46,11 +47,6 @@ div.figure {
     background-color: white;
 }
 
-.slide .big .highlight pre {
-    font-size: 80%;
-    max-height: 40ex;
-    overflow-y: auto;
-}
 
 /* custom roles
    IMPORTANT: those require the use of .. role:: X in the RST files using them.
