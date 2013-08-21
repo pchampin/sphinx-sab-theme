@@ -64,31 +64,46 @@ p.graphviz > img {
 }
 
 @media print {
-    .sab-printable  h1,
-    .sab-printable  h2,
-    .sab-printable  h3,
-    .sab-printable  h4,
-    .sab-printable  h5,
-    .sab-printable  h6 {
+    body {
+        font-family: serif;
+    }
+
+    div.body .sab-printable h1,
+    div.body .sab-printable h2,
+    div.body .sab-printable h3,
+    div.body .sab-printable h4,
+    div.body .sab-printable h5,
+    div.body .sab-printable h6 {
+        font-family: serif;
         font-weight: bold;
         padding-left: 0px;
         page-break-after: avoid;
+        background: none;
+        text-shadow: none;
     }
 
+    div.body .sab-printable h1:first-child {
+        font-family: sans;
+        text-align: center;
+    }
 
     .sab-printable h1 {
         counter-reset: section-lvl2 section-lvl3;
     }
     .sab-printable h2 {
-        page-break-before: right;
+        page-break-before: always;
     }
     .sab-printable h2:before {
         counter-increment: section-lvl2;
         content: "Partie " counter(section-lvl2) " : ";
     }
     .sab-printable h3 {
+        page-break-before: always;
         counter-reset: section-lvl4;
         border-top: 1.5px solid black;
+    }
+    .sab-printable h3:first-child {
+        page-break-before: avoid;
     }
     .sab-printable h3:before {
         counter-increment: section-lvl3;
