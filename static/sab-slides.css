@@ -31,7 +31,7 @@ article.slide {
     font-size: 150%;
 }
 
-.slide.level-2 h2+* {
+.slide.level-2 h2+blockquote {
     position: relative;
     top: -15em;
 }
