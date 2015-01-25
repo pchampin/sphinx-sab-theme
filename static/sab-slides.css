@@ -140,6 +140,22 @@ a.reference {
 }
 
 
+/* better highlighted code */
+
+table.highlighttable td {
+    border: none;
+}
+
+table.highlighttable td.linenos {
+    padding-right: 0;
+    text-align: right;
+}
+
+table.highlighttable td.linenos pre {
+    box-shadow: none;
+}
+
+
 /* smaller font in literal line blocks */
 
 .line-block .line .literal {
