@@ -25,7 +25,7 @@ Adaptation is required if your source files are in the project root.
 #. in the HTML section of the ``conf.py`` file, set the following variables::
 
      html_theme_path = ["../themes"]
-     html_theme = "shpinx-sab-theme"
+     html_theme = "sphinx-sab-theme"
 
 #. in the Hieroglyph section of the ``conf.py`` file,
    set the following varables::
