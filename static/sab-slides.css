@@ -87,6 +87,11 @@ div.figure p.caption { /* override strange rules in default slide CSS */
     margin-top: 5px;
 }
 
+div.warning {
+    background-color: #FFE4E4;
+    border: 1px solid #F66;
+}
+
 div.topic.contents {
     border: none;
 }
